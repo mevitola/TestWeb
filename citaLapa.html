@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formas</title>
+    <script>
+    
+    function krasot(){
+        var kr=document.getElementById("krasa").value;
+        document.getElementById("fons").style="background-color:"+kr;
+    }
+    
+    </script>
+</head>
+<body>
+<form>
+  <div id="fons" style="background-color:lightgrey" >Izvēlies krāsu!</div>
+  <input type="color" id="krasa" value="#00ff00" onclick="krasot();">
+ 
+</form>
+<button onclick='document.getElementById("fons").innerHTML= "Krāsa nomainīta"' >Click me!</button>
+</body>
+</html>
